@@ -145,6 +145,13 @@ app.post("/file", async (req, res) => {
     console.log(req.body.desc)
 })
 
+
+app.get("/", (req, res) => { 
+    res.send({ 
+        message: "Welcome. This application works."
+    })
+})
+
 server.listen(3001, () => { 
     console.log("App is listening...")
 })
