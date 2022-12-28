@@ -24,7 +24,7 @@ const openai = new OpenAIApi(configuration)
 app.use(express())
 
 app.use(cors({
-  origin: ["http://localhost:3000"],
+  origin: ["https://chatgptfrontend.vercel.app"],
   methods: ["POST"]
 }))
 
@@ -36,7 +36,7 @@ app.use(bodyParser.json() || bodyParser.urlencoded({ extended: false }))
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000"]
+    origin: ["https://chatgptfrontend.vercel.app"]
   }
 })
 
