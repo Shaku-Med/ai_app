@@ -13,7 +13,7 @@ const CryptoJS = require('crypto-js')
 
 const configuration = new Configuration({ 
     organization: 'org-oAaVEXxINRHM1oyRCU8urJkU',
-    apiKey: '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'
+    apiKey: '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'
 })
 
 const openai = new OpenAIApi(configuration)
@@ -24,7 +24,7 @@ const openai = new OpenAIApi(configuration)
 app.use(express())
 
 app.use(cors({
-  origin: ["http://localhost:3000", "http://192.168.1.43:3000", "https://orgainze-whitewebforus-gmailcom.vercel.app/", "https://orgainze-whitewebforus-gmailcom.vercel.app", "http://192.168.1.43:3000", "https://testbackend.mohamedbrima.repl.co"],
+  origin: ["http://localhost:3000"],
   methods: ["POST"]
 }))
 
@@ -36,7 +36,7 @@ app.use(bodyParser.json() || bodyParser.urlencoded({ extended: false }))
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://192.168.1.43:3000", "https://orgainze-whitewebforus-gmailcom.vercel.app/", "https://orgainze-whitewebforus-gmailcom.vercel.app", "http://192.168.1.43:3000", "https://testbackend.mohamedbrima.repl.co"]
+    origin: ["http://localhost:3000"]
   }
 })
 
