@@ -13,7 +13,7 @@ const CryptoJS = require('crypto-js')
 
 const configuration = new Configuration({ 
     organization: 'org-oAaVEXxINRHM1oyRCU8urJkU',
-    apiKey: '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'
+    apiKey: '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'
 })
 
 const openai = new OpenAIApi(configuration)
